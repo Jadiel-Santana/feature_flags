@@ -43,6 +43,6 @@ class ProductsPresenter extends ValueNotifier<HomeState> {
     );
     int firebaseVersion = int.parse(version.replaceAll('.', ''));
 
-    return (firebaseVersion < appVersion);
+    return (firebaseVersion > appVersion);
   }
 }

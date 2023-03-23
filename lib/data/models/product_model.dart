@@ -5,11 +5,11 @@ class ProductModel extends ProductEntity {
     required super.id,
     required super.title,
     required super.price,
-    required super.description,
+    required super.brand,
     required super.category,
     required super.image,
     required super.rating,
-    required super.count,
+    required super.stock,
   });
 
   factory ProductModel.fromMap({required Map<String, dynamic> map}) {
@@ -18,11 +18,11 @@ class ProductModel extends ProductEntity {
         id: map['id']?.toInt() ?? 0,
         title: map['title'] ?? '',
         price: map['price']?.toDouble() ?? 0.0,
-        description: map['description'] ?? '',
+        brand: map['brand'] ?? '',
         category: map['category'] ?? '',
-        image: map['image'] ?? '',
-        rating: map['rating']['rate']?.toDouble() ?? 0.0,
-        count: map['rating']['count']?.toInt() ?? 0,
+        image: map['thumbnail'] ?? '',
+        rating: map['rating']?.toDouble() ?? 0.0,
+        stock: map['stock']?.toInt() ?? 0,
       );
     } catch (e) {
       throw Exception(e.toString());

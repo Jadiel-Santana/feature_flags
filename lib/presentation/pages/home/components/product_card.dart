@@ -55,7 +55,7 @@ class ProductCard extends StatelessWidget {
                     ),
                     const SizedBox(height: 4),
                     Text(
-                      product.category.capitalize(),
+                      product.brand.capitalize(),
                       style: const TextStyle(
                         fontSize: 14,
                         color: Colors.grey,
@@ -80,7 +80,7 @@ class ProductCard extends StatelessWidget {
                             ),
                             const SizedBox(width: 6),
                             Text(
-                              '(${product.count})',
+                              '(${product.stock})',
                               style: const TextStyle(
                                 fontSize: 12,
                                 color: Colors.grey,
