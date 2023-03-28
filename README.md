@@ -2,7 +2,7 @@
 
 App desenvolvido para estudos e aplicação de Feature Flags/Feature Toggles.
 
-[![Flutter](https://img.shields.io/badge/Powered%20by-FLUTTER%20v3.0.5-blue)](https://flutter.dev/)
+[![Flutter](https://img.shields.io/badge/Powered%20by-FLUTTER%20v3..7.7-blue)](https://flutter.dev/)
 
 **Tecnologias utilizadas**: Clean Architecture, MVP, SOLID, ValueNotifier, Firebase Remote Config.
 
